@@ -5,6 +5,13 @@
         "id": "1352iFuTSDDFPNAXBbOaEXkF8mCdjPu6B43hpUF2P3C4",
         "filepath": "src/data/copy.json"
       }
-    ]
+		],
+		"sheet": [
+			{
+				"id": "1KlOwb28JAlRY0pcXJbCekoRXYBho7gbl-56n9oLez3A",
+				"gid": "0",
+				"filepath": "src/data/sanwiches.csv"
+			}
+		]
   }
 }
