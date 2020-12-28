@@ -5,8 +5,10 @@
   import rawData from "../data/sanwiches.csv";
   import Meta from "./Meta.svelte";
   import Sandwich from "./Sandwich.svelte";
+  import Sandwich2 from "./Sandwich2.svelte";
 
-  const sandwichData = rawData.map((d) => ({
+  const sandwichData = rawData.map((d, i) => ({
+    index: i,
     id: d.name.toLowerCase().replace(/[^a-z]/g, ""),
     love: 0,
     hate: 0,
@@ -29,17 +31,17 @@
 
   const fetchRatings = async () => {
     try {
-      // this does realtime
-      // await db.collection("ratings").onSnapshot((snapshot) => {
       // this does once
-      await db
-        .collection("ratings")
-        .get()
-        .then((snapshot) => {
-          snapshot.forEach((doc) => {
-            ratingData[doc.id] = doc.data();
-          });
+      // await db
+      //   .collection("ratings")
+      //   .get()
+      //   .then((snapshot) => {
+      // this does realtime
+      await db.collection("ratings").onSnapshot((snapshot) => {
+        snapshot.forEach((doc) => {
+          ratingData[doc.id] = doc.data();
         });
+      });
       ratingData = ratingData;
     } catch (err) {
       console.log(err);
@@ -95,11 +97,29 @@
 
 <Meta />
 
-<h1>Peanut Butter &amp; ?</h1>
+<h1>The Complete Guide to Peanut Butter Sandwiches</h1>
 
-{#each data as d (d.id)}
-  <Sandwich {...d} on:rate="{onRate}" />
-{/each}
+<section>
+  {#each data as d (d.id)}
+    <Sandwich2 {...d} on:rate="{onRate}" />
+  {/each}
+</section>
 
-<p>warning: this will reset everything.</p>
-<button style="margin-top:10em;" on:click="{reset}">Reset: {status}</button>
+<p style="margin-top:10em;">warning: this will reset everything.</p>
+<button on:click="{reset}">Reset: {status}</button>
+
+<style>
+  section {
+    padding: 1em;
+  }
+
+  h1 {
+    font-weight: var(--bold);
+    font-size: 8vw;
+    line-height: 1;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 0.04em 0.04em 0 var(--primary);
+  }
+</style>

@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+  src: url("../atkinson/Atkinson-Hyperlegible-Regular-102.woff2") format("woff2"),
+       url("../atkinson/Atkinson-Hyperlegible-Regular-102.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+  src: url("../atkinson/Atkinson-Hyperlegible-Bold-102.woff2") format("woff2"),
+       url("../atkinson/Atkinson-Hyperlegible-Bold-102.woff") format("woff");
+}
+
 /*
 			This font software is the property of Commercial Type.
 
@@ -18,8 +36,8 @@
 
 @font-face {
 	font-family: 'National 2 Web';
-	src: url('pudding-fonts/national/National2Web-Regular.woff2') format('woff2'),
-	url('pudding-fonts/national/National2Web-Regular.woff') format('woff');
+	src: url('../national/National2Web-Regular.woff2') format('woff2'),
+	url('../national/National2Web-Regular.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
@@ -28,8 +46,8 @@
 
 @font-face {
 	font-family: 'National 2 Web';
-	src: url('pudding-fonts/national/National2Web-Bold.woff2') format('woff2'),
-	url('pudding-fonts/national/National2Web-Bold.woff') format('woff');
+	src: url('../national/National2Web-Bold.woff2') format('woff2'),
+	url('../national/National2Web-Bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 	font-stretch: normal;
@@ -45,8 +63,8 @@
 /*
 @font-face {
 	font-family: 'National 2 Narrow Web';
-	src: url('pudding-fonts/national/National2NarrowWeb-Extralight.woff2') format('woff2'),
-	url('pudding-fonts/national/National2NarrowWeb-Extralight.woff') format('woff');
+	src: url('../national/National2NarrowWeb-Extralight.woff2') format('woff2'),
+	url('../national/National2NarrowWeb-Extralight.woff') format('woff');
 	font-weight: 200;
 	font-style: normal;
 	font-stretch: normal;
@@ -55,8 +73,8 @@
 
 @font-face {
 	font-family: 'National 2 Narrow Web';
-	src: url('pudding-fonts/national/National2NarrowWeb-Regular.woff2') format('woff2'),
-	url('pudding-fonts/national/National2NarrowWeb-Regular.woff') format('woff');
+	src: url('../national/National2NarrowWeb-Regular.woff2') format('woff2'),
+	url('../national/National2NarrowWeb-Regular.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
@@ -65,8 +83,8 @@
 
 @font-face {
 	font-family: 'National 2 Narrow Web';
-	src: url('pudding-fonts/national/National2NarrowWeb-Bold.woff2') format('woff2'),
-	url('pudding-fonts/national/National2NarrowWeb-Bold.woff') format('woff');
+	src: url('../national/National2NarrowWeb-Bold.woff2') format('woff2'),
+	url('../national/National2NarrowWeb-Bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 	font-stretch: normal;
@@ -76,8 +94,8 @@
 /*
 @font-face {
 	font-family: 'National 2 Narrow Web';
-	src: url('pudding-fonts/national/National2NarrowWeb-Black.woff2') format('woff2'),
-	url('pudding-fonts/national/National2NarrowWeb-Black.woff') format('woff');
+	src: url('../national/National2NarrowWeb-Black.woff2') format('woff2'),
+	url('../national/National2NarrowWeb-Black.woff') format('woff');
 	font-weight: 900;
 	font-style: normal;
 	font-stretch: normal;
@@ -93,8 +111,8 @@
 
 @font-face {
 	font-family: 'Tiempos Text Web';
-	src: url('pudding-fonts/tiempos/TiemposTextWeb-Regular.woff2') format('woff2'),
-	url('pudding-fonts/tiempos/TiemposTextWeb-Regular.woff') format('woff');
+	src: url('../tiempos/TiemposTextWeb-Regular.woff2') format('woff2'),
+	url('../tiempos/TiemposTextWeb-Regular.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;
@@ -103,8 +121,8 @@
 
 @font-face {
 	font-family: 'Tiempos Text Web';
-	src: url('pudding-fonts/tiempos/TiemposTextWeb-Bold.woff2') format('woff2'),
-	url('pudding-fonts/tiempos/TiemposTextWeb-Bold.woff') format('woff');
+	src: url('../tiempos/TiemposTextWeb-Bold.woff2') format('woff2'),
+	url('../tiempos/TiemposTextWeb-Bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 	font-stretch: normal;
@@ -120,8 +138,8 @@
 /*
 @font-face {
 	font-family: 'Tiempos Headline Web';
-	src: url('pudding-fonts/tiempos/TiemposHeadlineWeb-Regular.woff2') format('woff2'),
-	url('pudding-fonts/tiempos/TiemposHeadlineWeb-Regular.woff') format('woff');
+	src: url('../tiempos/TiemposHeadlineWeb-Regular.woff2') format('woff2'),
+	url('../tiempos/TiemposHeadlineWeb-Regular.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
 	font-stretch: normal;

@@ -1,5 +1,5 @@
-name,ingredients
-Peanut Butter and Jelly,jelly
-Fluffernutter,fluff
-Peanut Butter and Mayo,mayo
-The Elvis,"banana, bacon"
+name,ingredients,description
+Peanut Butter and Jelly,jelly,"The classic, no explanation needed, right?"
+Fluffernutter,fluff,"The sweet treat featuring the Somerville, MA darling, fluff."
+Peanut Butter and Mayo,mayo,An old southern variation stemming from the Great Depression.
+The Elvis,"banana, bacon","Allegedly one of the King's many cravings, according to his mom."
