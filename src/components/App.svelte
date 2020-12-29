@@ -98,11 +98,13 @@
 <Meta />
 
 <section>
-  <h1>The Complete Guide to Peanut Butter Sandwiches</h1>
-  <p>
-    Expand your palette &mdash; and mind &mdash; with this exhaustive list of
-    peanut butter sandwich alternatives. Make. Eat. Rate.
-  </p>
+  <h1>
+    The Complete Guide to Peanut Butter Sandwiches
+    <span>
+      Spice up your PB&amp;J life. Expand your palette &mdash; and mind &mdash;
+      with this exhaustive list of peanut butter sandwiches.
+    </span>
+  </h1>
 </section>
 <section>
   {#each data as d (d.id)}
@@ -116,17 +118,32 @@
 <button on:click="{reset}">Reset: {status}</button> -->
 <style>
   section {
-    padding: 1em;
+    padding: 2rem;
     overflow-x: hidden;
   }
 
   h1 {
     font-weight: var(--bold);
-    font-size: 8vw;
+    font-size: 7.5vw;
     line-height: 1.1;
     padding: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     text-shadow: 0.04em 0.04em 0 var(--primary);
+  }
+
+  span {
+    font-size: 1rem;
+    display: inline-block;
+    width: 21rem;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+  }
+
+  @media only screen and (min-width: 80em) {
+    span {
+      width: 12rem;
+    }
   }
 </style>

@@ -31,9 +31,11 @@
     <p><strong>{name}</strong></p>
     <p class="rate">
       <!-- <span>{love}%</span> -->
-      <button on:click="{() => onClick('love', id)}">{love} 🤤</button>
+      <button on:click="{() => onClick('love', id)}"><span>{love}</span>
+        😋</button>
       <!-- <span>{hate}%</span> -->
-      <button on:click="{() => onClick('hate', id)}">🤮 {hate}</button>
+      <button on:click="{() => onClick('hate', id)}">🤮
+        <span>{hate}</span></button>
     </p>
   </div>
   <ul class="ingredients">
@@ -150,5 +152,10 @@
 
   button {
     padding: 0.25em 0.5em;
+    font-size: 1.25em;
+  }
+
+  span {
+    font-size: 0.85em;
   }
 </style>
