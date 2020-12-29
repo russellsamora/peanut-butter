@@ -31,9 +31,9 @@
     <p><strong>{name}</strong></p>
     <p class="rate">
       <!-- <span>{love}%</span> -->
-      <button on:click="{() => onClick('love', id)}">🤤</button>
+      <button on:click="{() => onClick('love', id)}">{love} 🤤</button>
       <!-- <span>{hate}%</span> -->
-      <button on:click="{() => onClick('hate', id)}">🤮</button>
+      <button on:click="{() => onClick('hate', id)}">🤮 {hate}</button>
     </p>
   </div>
   <ul class="ingredients">

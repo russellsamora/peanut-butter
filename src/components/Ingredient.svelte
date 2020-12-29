@@ -19,6 +19,7 @@
     width: 160px;
     padding: 1em;
     display: inline-block;
+    transition: transform 150ms ease-out;
     /* filter: drop-shadow(-4px 0px 0 var(--fg)) drop-shadow(4px 0px 0 var(--fg))
 			drop-shadow(0 4px 0 var(--fg)) drop-shadow(0 -4px 0 var(--fg)); */
     filter: drop-shadow(-4px 0px 0 var(--white))
@@ -36,5 +37,9 @@
       drop-shadow(4px 0px 0 var(--secondary))
       drop-shadow(0 4px 0 var(--secondary))
       drop-shadow(0 -4px 0 var(--secondary));
+  }
+
+  img:hover {
+    transform: rotate(0deg) scale(1.25) !important;
   }
 </style>

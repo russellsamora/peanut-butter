@@ -97,26 +97,33 @@
 
 <Meta />
 
-<h1>The Complete Guide to Peanut Butter Sandwiches</h1>
-
+<section>
+  <h1>The Complete Guide to Peanut Butter Sandwiches</h1>
+  <p>
+    Expand your palette &mdash; and mind &mdash; with this exhaustive list of
+    peanut butter sandwich alternatives. Make. Eat. Rate.
+  </p>
+</section>
 <section>
   {#each data as d (d.id)}
     <Sandwich2 {...d} on:rate="{onRate}" />
   {/each}
 </section>
 
-<p style="margin-top:10em;">warning: this will reset everything.</p>
-<button on:click="{reset}">Reset: {status}</button>
+<p>*This website contains peanuts</p>
 
+<!-- <p style="margin-top:10em;">warning: this will reset everything.</p>
+<button on:click="{reset}">Reset: {status}</button> -->
 <style>
   section {
     padding: 1em;
+    overflow-x: hidden;
   }
 
   h1 {
     font-weight: var(--bold);
     font-size: 8vw;
-    line-height: 1;
+    line-height: 1.1;
     padding: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
